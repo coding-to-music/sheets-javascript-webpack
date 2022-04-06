@@ -45,6 +45,119 @@ heroku config:set
 
 ```java
 git push heroku
+
+# or
+
+npm run deploy
+```
+
+## Update npm packages to latest compatible version
+
+```java
+npm install -g npm-check-updates
+```
+
+Output:
+
+```java
+added 266 packages, and audited 267 packages in 9s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+Run it again
+
+```java
+ncu -u
+```
+
+Output:
+
+```java
+Upgrading /mnt/volume_nyc1_01/sheets-javascript-webpack/package.json
+[====================] 10/10 100%
+
+ express              ^4.16.4  →  ^4.17.3
+ css-loader            ^3.2.1  →   ^6.7.1
+ html-webpack-plugin   ^3.2.0  →   ^5.5.0
+ node-sass            ^4.13.0  →   ^7.0.1
+ sass-loader           ^8.0.0  →  ^12.6.0
+ style-loader          ^1.0.1  →   ^3.3.1
+ webpack              ^4.41.2  →  ^5.71.0
+ webpack-cli          ^3.3.10  →   ^4.9.2
+
+Run npm install to install new versions.
+```
+
+```java
+npm install
+```
+
+Output:
+
+```
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 372 packages, and audited 427 packages in 11s
+
+45 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+Run it again:
+
+```java
+tmc@docker-ubuntu-s-1vcpu-1gb-nyc1-01:/mnt/volume_nyc1_01/sheets-javascript-webpack$ ncu -u
+```
+
+Output:
+
+```java
+Upgrading /mnt/volume_nyc1_01/sheets-javascript-webpack/package.json
+[====================] 10/10 100%
+
+ express  ^4.17.1  →  ^4.17.3
+
+Run npm install to install new versions.
+```
+
+Install:
+
+```java
+tmc@docker-ubuntu-s-1vcpu-1gb-nyc1-01:/mnt/volume_nyc1_01/sheets-javascript-webpack$ npm install
+```
+
+Output:
+
+```java
+up to date, audited 427 packages in 1s
+
+45 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+Run it again:
+
+```java
+tmc@docker-ubuntu-s-1vcpu-1gb-nyc1-01:/mnt/volume_nyc1_01/sheets-javascript-webpack$ ncu -u
+```
+
+Success!!
+
+```java
+Upgrading /mnt/volume_nyc1_01/sheets-javascript-webpack/package.json
+[====================] 10/10 100%
+
+All dependencies match the latest package versions :)
 ```
 
 ## Prerequisites
