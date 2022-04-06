@@ -18,5 +18,9 @@ app.get("/", (request, response) => {
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
-  console.log(`Your app is listening on port ${listener.address().port}`);
+  console.log(
+    `Your app is listening on port ${
+      listener.address().port
+    } or on http://localhost:${listener.address().port}`
+  );
 });
