@@ -6,7 +6,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "build": "cd client && webpack --mode=production --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js",
     "start": "npm run build && node server/index.js",
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
     "oldstart": "node server",

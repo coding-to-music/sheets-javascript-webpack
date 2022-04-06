@@ -1,11 +1,11 @@
 const globals = require("./globals.js");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const jsToScss = require("./client/utils/jsToScss.js");
+const jsToScss = require("./utils/jsToScss.js");
 
 module.exports = {
-  entry: __dirname + "/client/app/index.js",
+  entry: __dirname + "/app/index.js",
   output: {
-    path: __dirname + "/client/dist/",
+    path: __dirname + "/dist/",
     publicPath: "/",
     filename: "index_bundle.js",
   },
