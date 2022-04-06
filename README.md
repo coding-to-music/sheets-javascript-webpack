@@ -8,6 +8,10 @@ https://sheets-javascript-webpack.herokuapp.com
 - Google Sheets for Developers
 - Sheets API - Guides
 
+https://developers.google.com/sheets/api/quickstart/js
+
+https://github.com/googleworkspace/browser-samples/blob/master/sheets/quickstart/index.html
+
 ## Complete the steps described in the rest of this page to create a simple JavaScript web application that makes requests to the Google Sheets API.
 
 # How to share variables across HTML, CSS, and JavaScript using Webpack
@@ -52,6 +56,38 @@ git push heroku
 # or
 
 npm run deploy
+```
+
+## Notice about getting set up on Google Cloud Platform
+
+```java
+Hello freeCodeCamp
+Google Sheets API Quickstart
+
+{
+  "error": "idpiframe_initialization_failed",
+  "details": "Not a valid origin for the client: https://sheets-javascript-webpack.herokuapp.com has not been registered for client ID <YOUR_CLIENT_ID>. Please go to https://console.developers.google.com/ and register this origin for your project's client ID."
+}
+```
+
+## Get your Google API client ID
+
+- To enable Sign In With Google on your website, you first need to set up your Google API client ID. To do so, complete the following steps:
+
+## Open the Credentials page of the Google APIs console.
+
+- Create or select a Google APIs project. If you already have a project for the Sign In With Google button or Google One Tap, use the existing project and the web client ID.
+
+- If your project doesn't have a Web application-type client ID, click `Create credentials > OAuth client ID` to create one. Be sure to include your site's domain in the `Authorized JavaScript origins` box. Please note that Google One Tap can only be displayed in HTTPS domains. When you perform local tests or development, you must add both `http://localhost` and `http://localhost:<port_number>` to the Authorized JavaScript origins box.
+
+https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
+
+```java
+GOOGLE_API_KEY=""
+GOOGLE_CLIENT_ID=""
+
+heroku config:set GOOGLE_API_KEY=<YOUR_GOOGLE_API_KEY>
+heroku config:set GOOGLE_CLIENT_ID=<YOUR_GOOGLE_CLIENT_ID>
 ```
 
 ## Update npm packages to latest compatible version
