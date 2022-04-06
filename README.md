@@ -40,6 +40,8 @@ heroku create sheets-javascript-webpack
 
 ```java
 heroku config:set
+
+heroku config:set PUBLIC_URL="https://sheets-javascript-webpack.herokuapp.com"
 ```
 
 ## Push to Heroku
