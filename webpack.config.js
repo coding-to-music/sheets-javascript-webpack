@@ -5,7 +5,8 @@ const jsToScss = require("./utils/jsToScss.js");
 module.exports = {
   entry: __dirname + "/app/index.js",
   output: {
-    path: __dirname + "/dist",
+    path: __dirname + "dist/",
+    publicPath: "/",
     filename: "index_bundle.js",
   },
   plugins: [
@@ -27,7 +28,7 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              prependData: jsToScss(globals),
+              additionalData: jsToScss(globals),
             },
           },
         ],

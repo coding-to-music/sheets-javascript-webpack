@@ -1,11 +1,10 @@
 # Google Sheets API - JavaScript Quickstart
 
-- Home
-- Products
-- Google Workspace for Developers
+https://github.com/coding-to-music/sheets-javascript-webpack
+
+- Home - Products - Google Workspace for Developers
 - Google Sheets for Developers
-- Sheets API
-- Guides
+- Sheets API - Guides
 
 ## Complete the steps described in the rest of this page to create a simple JavaScript web application that makes requests to the Google Sheets API.
 

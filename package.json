@@ -1,12 +1,12 @@
 {
-  "name": "sheets-javascript-quickstart",
+  "name": "sheets-javascript-webpack",
   "version": "3.0.0",
   "description": "How to read google sheets with google API on Heroku",
   "engines": {
     "node": "16.x"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js",
     "start": "npm run build && node server/index.js",
     "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku",
     "oldstart": "node server",
