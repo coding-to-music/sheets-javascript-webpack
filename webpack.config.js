@@ -4,9 +4,11 @@ const jsToScss = require("./utils/jsToScss.js");
 
 module.exports = {
   entry: __dirname + "/app/index.js",
+  stats: "verbose",
+  // stats.children: true,
   output: {
     path: __dirname + "/dist/",
-    publicPath: "/",
+    publicPath: "/public/",
     filename: "index_bundle.js",
   },
   plugins: [

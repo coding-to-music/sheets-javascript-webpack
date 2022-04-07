@@ -16,8 +16,17 @@ const app = express();
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
+// app.set("view engine", "ejs");
+
+// app.get("/", (req, res) => {
+//   res.render("index", { foo: "FOO" });
+// });
+
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, "/public")));
+
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, "/dist")));
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("dist"));

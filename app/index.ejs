@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Hello!</title>
-    <link rel="icon" href="/dist/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,12 @@
     <button id="authorize_button" style="display: none">Authorize</button>
     <button id="signout_button" style="display: none">Sign Out</button>
 
-    <pre id="content" style="white-space: pre-wrap"></pre>
+    <!-- <pre id="content" style="white-space: pre-wrap"></pre>
+    <script src="ejs.js"></script>
+    <script>
+      let people = ["geddy", "neil", "alex"];
+      let html = ejs.render('<%= people.join(", "); %>', { people: people });
+    </script> -->
 
     <script type="module">
       import { test } from "./demo.js";
