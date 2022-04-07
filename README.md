@@ -642,3 +642,9 @@ https://glitch.com/edit/#!/shared-variables-webpack?path=webpack.config.js
 If you are still reading this tutorial, thanks for your attention. I hope it helps you! Webpack is a very powerful tool you should dig more into ?
 
 NB: In your dist/ folder you can see there isn't any CSS generated. That's because I use the style-loader to keep this demo simple. To generate the CSS file, take a look at the mini-css-extract-plugin.
+
+## Copy some code for later
+
+```java
+
+```
