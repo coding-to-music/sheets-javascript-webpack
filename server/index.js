@@ -1,6 +1,12 @@
 // server.js
 // where your node app starts
 
+// dotenv config
+require("dotenv").config();
+
+const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const API_KEY = process.env.GOOGLE_API_KEY;
+
 const path = require("path");
 
 // init project
